@@ -1,0 +1,221 @@
+.app-container {
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .appointments-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-heading {
+    color: #171f46;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .form-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .label {
+    color: #7e858e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .input {
+    height: 40px;
+    border: 1px solid #b5b7c4;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+  }
+  
+  .input:focus {
+    border-color: #9897f0;
+  }
+  
+  .add-button {
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    align-self: flex-start;
+  }
+  
+  .add-button:hover {
+    background-color: #7c3aed;
+  }
+  
+  .appointments-image {
+    display: none;
+  }
+  
+  .separator {
+    border: 1px solid #b5b7c4;
+    margin: 24px 0;
+  }
+  
+  .header-with-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .appointments-heading {
+    color: #171f46;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .starred-button {
+    background-color: transparent;
+    border: 1px solid #9897f0;
+    color: #9897f0;
+    border-radius: 20px;
+    padding: 4px 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .starred-button.active {
+    background-color: #9897f0;
+    color: white;
+  }
+  
+  .appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+  }
+  
+  .no-appointments {
+    color: #7e858e;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Extra Small Devices (phones, 320px and up) */
+  @media screen and (min-width: 320px) {
+    .appointments-container {
+      padding: 16px;
+    }
+  
+    .main-heading {
+      font-size: 20px;
+    }
+  
+    .appointments-heading {
+      font-size: 18px;
+    }
+  
+    .input {
+      height: 36px;
+      padding: 6px 12px;
+    }
+  
+    .add-button {
+      padding: 6px 12px;
+    }
+  }
+  
+  /* Small Devices (phones, 576px and up) */
+  @media screen and (min-width: 576px) {
+    .appointments-container {
+      padding: 20px;
+    }
+  
+    .main-heading {
+      font-size: 22px;
+    }
+  
+    .appointments-heading {
+      font-size: 20px;
+    }
+  
+    .input {
+      height: 40px;
+      padding: 8px 16px;
+    }
+  
+    .add-button {
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Medium Devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+    .form-image-container {
+      flex-direction: row;
+      gap: 40px;
+    }
+  
+    .form {
+      width: 50%;
+    }
+  
+    .appointments-image {
+      display: block;
+      width: 40%;
+      height: auto;
+    }
+  
+    .appointments-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* Large Devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    .appointments-container {
+      padding: 24px;
+    }
+  
+    .main-heading {
+      font-size: 24px;
+    }
+  
+    .appointments-heading {
+      font-size: 22px;
+    }
+  }
+  
+  /* Extra Large Devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .appointments-container {
+      max-width: 1200px;
+    }
+  }
+  

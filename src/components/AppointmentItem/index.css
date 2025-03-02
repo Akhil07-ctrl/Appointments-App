@@ -1,0 +1,100 @@
+.appointment-item {
+    list-style-type: none;
+    border: 1px solid #b5b7c4;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    color: #171f46;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .star-button {
+    background: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .star {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .date-text {
+    color: #7e858e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Extra Small Devices (phones, 320px and up) */
+  @media screen and (min-width: 320px) {
+    .appointment-item {
+      padding: 12px;
+    }
+  
+    .title {
+      font-size: 14px;
+    }
+  
+    .date-text {
+      font-size: 10px;
+    }
+  }
+  
+  /* Small Devices (phones, 576px and up) */
+  @media screen and (min-width: 576px) {
+    .appointment-item {
+      padding: 16px;
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+  
+    .date-text {
+      font-size: 12px;
+    }
+  }
+  
+  /* Medium Devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+    .appointment-item {
+      width: 45%;
+      margin-right: 12px;
+    }
+  }
+  
+  /* Large Devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    .appointment-item {
+      width: 30%;
+    }
+  }
+  
+  /* Extra Large Devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .appointment-item {
+      width: 23%;
+    }
+  }
+  
